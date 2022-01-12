@@ -4,13 +4,25 @@ namespace Work_with_gitHub
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void WriteArray(int[] ints)
+        {
+            foreach (var integer in ints)
+            {
+                Console.Write(integer);
+            }
+            Console.WriteLine();
+        }
+
+        private static void Main()
         {
             Console.WriteLine("Hello World!");
             for (int i = 0; i > 10; i++)
             {
                 Console.WriteLine("a" + i);
             }
+
+            var arr = new int[] {1, 2, 3, 4, 5, 6};
+            WriteArray(arr);
         }
     }
 }
