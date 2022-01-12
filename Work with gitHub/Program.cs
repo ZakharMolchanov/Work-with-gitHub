@@ -8,7 +8,7 @@ namespace Work_with_gitHub
         {
             foreach (var integer in ints)
             {
-                Console.Write(integer);
+                Console.Write(integer + " ");
             }
             Console.WriteLine();
         }
